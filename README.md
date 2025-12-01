@@ -71,6 +71,15 @@ python train_styletest.py
 ```
 The training logs and checkpoints will be saved automatically under the default experiment directory.
 
+## 📊 Run Comparison Methods
+
+All baseline and comparison methods can be found in the `compare/` directory.
+Each method has a corresponding `.py` file that can be directly executed for independent experiments.
+```bash
+cd compare
+python compare_xxx.py
+```
+
 ## 📚 Citation
 
 If you find this work useful, please cite:
