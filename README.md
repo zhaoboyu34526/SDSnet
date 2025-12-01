@@ -27,5 +27,5 @@ Through **knowledge distillation**, SDSnet enables efficient inference using onl
 ## 🧠 Framework Overview
 
 <p align="center">
-  <img src="./Frame.png" width="80%">
+  <img src="./Frame.jpg" width="80%">
 </p>
