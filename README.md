@@ -29,3 +29,57 @@ Through **knowledge distillation**, SDSnet enables efficient inference using onl
 <p align="center">
   <img src="./Frame.jpg" width="80%">
 </p>
+
+## ⚙️ Environment Setup
+
+The environment configuration follows the setup in [**MobileSAM**](https://github.com/ChaoningZhang/MobileSAM).  
+Please refer to that repository for detailed dependency installation and environment preparation.
+
+---
+
+## 🧪 Experimental Steps
+
+### (1) Data Preparation and Cropping
+
+Prepare datasets and crop them into **512×512** image patches for training and validation.
+
+- **GID Dataset:** Download from [https://captain-whu.github.io/GID/](https://captain-whu.github.io/GID/)  
+- **Yellow River Dataset:** Download from [https://github.com/zhaoboyu34526/Alliance](https://github.com/zhaoboyu34526/Alliance)
+
+After downloading, modify the dataset paths in `data_cut.py`, then execute:
+
+```bash
+python data_cut.py
+```
+
+### (1) Path Configuration
+
+Modify the dataset path arguments in `train_styletest.py`:
+
+```bash
+parser.add_argument('--train_map',   default=r'/zbssd/yuyu/code/data512/experiment2021/train/img/',   type=str)
+parser.add_argument('--train_label', default=r'/zbssd/yuyu/code/data512/experiment2021/train/label/', type=str)
+parser.add_argument('--val_map',     default=r'/zbssd/yuyu/code/data512/experiment2021/val/img/',     type=str)
+parser.add_argument('--val_label',   default=r'/zbssd/yuyu/code/data512/experiment2021/val/label/',   type=str)
+```
+### (1) Model Training
+
+Run the following command to start training:
+
+```bash
+python train_styletest.py
+```
+The training logs and checkpoints will be saved automatically under the default experiment directory.
+
+## 📚 Citation
+
+If you find this work useful, please cite:
+```bash
+@article{li2025sdsnet,
+  title={Single-Source Domain Defect-Aware Adaptation and Style-Modulated Generalization Network for Multispectral Image Segmentation},
+  author={Li, Wei and Zhao, Boyu and Zhang, Mengmeng and Gao, Yunhao and Wang, Junjie},
+  journal={IEEE Transactions on Cybernetics},
+  year={2025},
+  publisher={IEEE}
+}
+```
