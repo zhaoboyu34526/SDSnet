@@ -10,6 +10,14 @@ This repository contains the official implementation of the paper:
 
 ---
 
+## 🧠 Framework Overview
+
+<p align="center">
+  <img src="./Frame.jpg" width="80%">
+</p>
+
+---
+
 ## 🧩 Abstract
 
 Multispectral remote sensing image (MSI) semantic segmentation faces challenges of limited labeled data and significant scene variability. Although Domain Adaptation (DA) and Domain Generalization (DG) methods alleviate these issues to some extent, they still have limitations: DA requires target domain data, while DG suffers from limited task adaptability.  
@@ -23,12 +31,6 @@ To address these challenges, we propose **SDSnet** (*Single-Source Domain Defect
 Through **knowledge distillation**, SDSnet enables efficient inference using only the base network without extra computational overhead. Extensive experiments on three target domains demonstrate SDSnet’s superiority over state-of-the-art DA, DG, and SAM-based methods.
 
 ---
-
-## 🧠 Framework Overview
-
-<p align="center">
-  <img src="./Frame.jpg" width="80%">
-</p>
 
 ## ⚙️ Environment Setup
 
