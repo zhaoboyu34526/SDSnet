@@ -6,7 +6,7 @@ This repository contains the official implementation of the paper:
 > *Wei Li, Boyu Zhao, Mengmeng Zhang, Yunhao Gao, and Junjie Wang*  
 > IEEE Transactions on Cybernetics (TCYB), 2025  
 >  
-> [![Paper](https://ieeexplore.ieee.org/document/11223031/)]()()
+> (https://ieeexplore.ieee.org/document/11223031/)
 
 ---
 
